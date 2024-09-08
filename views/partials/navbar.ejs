@@ -4,16 +4,27 @@
             <img src="/images/github.svg" class="filter-white" alt="Logo" width="40vh" height="40vh" class="d-inline-block align-text-top">
             /Porsycs
         </a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/"><i class="bi bi-house"> Home</i></a>
+                    <a class="nav-link active" aria-current="page" href="/"><i class="bi bi-house"></i> Home</a>
                 </li>
                 <li class="nav-item">   
-                    <a class="nav-link" href="/contact"><i class="bi bi-person-lines-fill"> Contact</i></a>
+                    <a class="nav-link" href="/contact"><i class="bi bi-person-lines-fill"></i> Contact</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        🌐 Language
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="languageDropdown">
+                        <li><a class="dropdown-item" href="/change-language/en">🇺🇸 English</a></li>
+                        <li><a class="dropdown-item" href="/change-language/pt">🇧🇷 Português</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -22,16 +33,15 @@
 
 <script>
     $(document).ready(function() {
-      $('.nav-link').on('click', function() {
-        $('.nav-link').removeClass('active');
-        
-        $(this).addClass('active');
-      });
+        $('.nav-link').on('click', function() {
+            $('.nav-link').removeClass('active');
+            $(this).addClass('active');
+        });
     });
 </script>   
 
 <style>
     .filter-white {
-    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-}
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+    }
 </style>

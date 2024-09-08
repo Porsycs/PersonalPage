@@ -1,0 +1,14 @@
+{
+    "myname": "Hi, my name is Victor",
+    "about": "About Me",
+    "aboutdescription": "Hello! My name is Victor, I'm %s years old, and I've been diving into the world of programming since I was 21. Originally from São Paulo, I now live in Bauru, where I completed my degree in Information Systems at UNESP Bauru.Currently, I work as a fullstack developer on a .NET application and am a key reference for the development team. My hobby and secondary focus is JavaScript, and this personal page is entirely built with Node.js.I hope you enjoy exploring what I’ve created here. Feel free to reach out if you have any questions or just want to connect in my <a href='https://www.linkedin.com/in/vicporsy' target='_blank'>Linkedin</a>. <br><br><strong> Best regards!</strong>",
+    "skills": "Skills",
+    "others": "Others",
+    "experience": "Experience",
+    "work1": "Support Intern - Aug/21 - Oct/21",
+    "work1description": "As a support intern, I received and organized tickets, performed queries and views in the SQL Server database, maintained code to ensure incorrect tasks were corrected, improved performance, adjusted users and records, resolved user inquiries, and developed by collaborating on sprint tasks using C# and ASP.NET for the backend and technologies such as HTML, CSS, Bootstrap, JS, jQueryand Ajax for the frontend. I also had knowledge of the system and business rules, which involved truck rental and sales,as well as CRM systems.",
+    "work2": "Fullstack Developer - Nov/21 - Present",
+    "work2description": "I work as a Fullstack Web Developer, with experience in developing and maintaining applications using .NET, currently serving as a reference for quality development within the company.  I have knowledge of messaging services such as Google Pub/Sub and RabbitMQ, ensuring efficient   communication between systems. I work with relational databases like SQL Server    and NoSQL databases like MongoDB, including their implementation in code. All communication is     facilitated using Docker. I am proficient in programming languages like C# and JavaScript     for the frontend, and I use libraries such as Razor and jQuery to create dynamic and responsive interfaces. I also work on creating RESTful APIs, ensuring that applications are scalable and       secure, meeting business needs and providing a high-quality user experience, always aiming for the best performance and quality possible.",
+    "contact": "Contact",
+    "contactdescription": "To get in touch, click the button below."
+}

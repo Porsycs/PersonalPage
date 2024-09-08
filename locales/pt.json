@@ -1,0 +1,15 @@
+{
+    "myname": "Olá, meu nome é Victor",
+    "about": "Sobre mim",
+    "aboutdescription": "Olá! Meu nome é Victor, tenho %s anos, e estou imerso no mundo da programação desde os 21.Originalmente de São Paulo, agora moro em Bauru, onde concluí minha graduação em Sistemas de Informação na UNESP Bauru.Atualmente, trabalho como desenvolvedor fullstack em uma aplicação .NET e sou uma referência importante para a equipe de desenvolvimento.Meu hobby e foco secundário é JavaScript, e esta página pessoal foi inteiramente construída com Node.js.Espero que você aproveite explorando o que criei aqui. Sinta-se à vontade para entrar em contato caso tenhaalguma dúvida ou apenas queira se conectar no meu <a href='https://www.linkedin.com/in/vicporsy' target='_blank'>Linkedin</a>.<br><br><strong>Atenciosamente!</strong>",
+    "skills": "Habilidades",
+    "others": "Outros",
+    "experience": "Experiência",
+    "work1": "Estagiário de suporte - ago/21 - out/21",
+    "work1description": "Como estagiário de suporte, recebi e organizei tickets, realizei consultas e visualizações no banco de dados SQL Server, mantive o código para garantir que tarefas incorretas fossem corrigidas, melhorei o desempenho, ajustei usuários e registros, resolvi dúvidas dos usuários e desenvolvi colaborando em tarefas de sprint utilizando C# e ASP.NET no backend e tecnologias como HTML, CSS, Bootstrap, JS, jQuery e Ajax no frontend. Também tive conhecimento do sistema e das regras de negócio, que envolviam aluguel e vendas de caminhões, bem como sistemas CRM. ",
+    "work2": "Desenvolvedor fullstack - nov/21 - Presente",
+    "work2description": "Trabalho como Desenvolvedor Web Fullstack, com experiência no desenvolvimento e manutenção de aplicações utilizando .NET, atualmente atuando como uma referência em desenvolvimento de qualidade dentro da empresa. Tenho conhecimento em serviços de mensageria como Google Pub/Sub e RabbitMQ, garantindo comunicação eficiente entre os sistemas. Trabalho com bancos de dados relacionais como SQL Server e bancos de dados NoSQL como MongoDB, incluindo sua implementação no código. Toda a comunicação é facilitada usando Docker. Sou proficiente em linguagens de programação como C# e JavaScript para o frontend, e utilizo bibliotecas como Razor e jQuery para criar interfaces dinâmicas e responsivas. Também trabalho na criação de APIs RESTful, garantindo que as aplicações sejam escaláveis e seguras, atendendo às necessidades do negócio e proporcionando uma experiência de usuário de alta qualidade, sempre buscando o melhor desempenho e qualidade possíveis. ",
+    "contact": "Contato",
+    "contactdescription": "Para entrar em contato, clique no botão abaixo"
+
+}

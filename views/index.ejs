@@ -7,29 +7,22 @@
                 <div class="d-flex justify-content-center">
                     <img src="/images/user.png" alt="User Image" width="15%" class="img-fluid rounded-circle mb-3">
                 </div>
-              <h1 class="display-4">Hi, my name is Victor</h1>
+              <h1 class="display-4"><%- __('myname') %></h1>
               <p class="lead">Web Developer | Fullstack Developer | Backend Developer</p>
             </div>
           </header>
         
           <section id="about" class="py-5">
             <div class="container">
-              <h2 class="display-5">About Me</h2>
+              <h2 class="display-5"><%- __('about') %></h2>
               <hr>
-              <p>Hello! My name is Victor, I’m <%= age %> years old, and I’ve been diving into the world of programming since I was 21.
-                 Originally from São Paulo, I now live in Bauru, where I completed my degree in Information Systems at UNESP Bauru.
-                Currently, I work as a fullstack developer on a .NET application and am a key reference for the development team.
-                 My hobby and secondary focus is JavaScript,
-                 and this personal page is entirely built with Node.js.
-                I hope you enjoy exploring what I’ve created here. Feel free to reach out if you have any
-                 questions or just want to connect in my <a href="https://www.linkedin.com/in/vicporsy" target="_blank">Linkedin</a>.
-                 <br><br><strong> Best regards!</strong></p>
+              <p><%- __('aboutdescription', age) %></p>
             </div>
           </section>
         
           <section id="skills" class="bg-light py-5">
             <div class="container">
-              <h2 class="display-5">Skills</h2>
+              <h2 class="display-5"><%= skills %></h2>
               <hr>
               <div class="row">
                 <div class="col-md-4">
@@ -62,46 +55,30 @@
         
           <section id="experience" class="py-5">
             <div class="container">
-              <h2 class="display-5">Experience</h2>
+              <h2 class="display-5"><%- __('experience') %></h2>
               <hr>
               <div class="accordion" id="experienceAccordion">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Support Intern - Aug/21 - Oct/21
+                      <%- __('work1') %>
                     </button>
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#experienceAccordion">
                     <div class="accordion-body">
-                        As a support intern, I received and organized tickets, 
-                        performed queries and views in the SQL Server database, 
-                        maintained code to ensure incorrect tasks were corrected, improved performance, 
-                        adjusted users and records, resolved user inquiries, and developed by collaborating on sprint tasks
-                         using C# and ASP.NET for the backend and technologies such as HTML, CSS, Bootstrap, JS, jQuery
-                        and Ajax for the frontend. 
-                        I also had knowledge of the system and business rules, which involved truck rental and sales,
-                        as well as CRM systems.
+                      <%- __('work1description') %>
                     </div>
                   </div>
                 </div>
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Fullstack Developer - Nov/21 - Present
+                      <%- __('work2') %>
                     </button>
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#experienceAccordion">
                     <div class="accordion-body">
-                        I work as a Fullstack Web Developer, with experience in developing and maintaining applications using
-                         .NET, currently serving as a reference for quality development within the company.
-                          I have knowledge of messaging services such as Google Pub/Sub and RabbitMQ, ensuring efficient
-                           communication between systems. I work with relational databases like SQL Server
-                            and NoSQL databases like MongoDB, including their implementation in code. All communication is 
-                            facilitated using Docker. I am proficient in programming languages like C# and JavaScript
-                             for the frontend, and I use libraries such as Razor and jQuery to create dynamic and responsive
-                              interfaces. I also work on creating RESTful APIs, ensuring that applications are scalable and
-                               secure, meeting business needs and providing a high-quality user experience, always aiming for
-                                the best performance and quality possible.
+                      <%- __('work2description') %>
                     </div>
                   </div>
                 </div>
@@ -111,9 +88,9 @@
         
           <section id="contact" class="bg-light py-5">
             <div class="container">
-                <h2 class="display-5">Contact</h2>
+                <h2 class="display-5"><%- __('contact') %></h2>
                 <hr>
-                <p>To get in touch, click the button below.</p>
+                <p><%- __('contactdescription') %></p>
                 <a href="https://wa.me/5511993331342" target="_blank" class="btn btn-success"><i class="bi bi-whatsapp"></i> Whatsapp</a>
                 <a href="/contact" class="btn btn-primary"><i class="bi bi-send"></i> Send E-mail</a>
             </div>
