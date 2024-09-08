@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://github.com/Porsycs" target="_blank">
+            <img src="/images/github.svg" class="filter-white" alt="Logo" width="40vh" height="40vh" class="d-inline-block align-text-top">
+            /Porsycs
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/"><i class="bi bi-house"> Home</i></a>
+                </li>
+                <li class="nav-item">   
+                    <a class="nav-link" href="/contact"><i class="bi bi-person-lines-fill"> Contact</i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<script>
+    $(document).ready(function() {
+      $('.nav-link').on('click', function() {
+        $('.nav-link').removeClass('active');
+        
+        $(this).addClass('active');
+      });
+    });
+</script>   
+
+<style>
+    .filter-white {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+</style>

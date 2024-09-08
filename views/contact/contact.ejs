@@ -1,0 +1,91 @@
+<%- include('../partials/header.ejs') %>
+<body>
+    <%- include('../partials/navbar.ejs') %>
+    <div class="container mt-5">
+    <div class="card" id="form-style">
+        <div class="card-header">
+        <h2 class="display-5">Contact Me</h2>
+      </div>
+      <div class="card-body">
+        <section id="contact" class="bg-light py-5">
+          <div class="container">
+            <form id="contactForm" action="/contact-send" method="POST">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control"placeholder="Yout Name" name="name" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" placeholder="Your E-mail" name="email" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" name="message" rows="4" placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Send</button>
+            </form>
+          </div>
+        </section>   
+    </div>
+  </div>
+  <div class="alert alert-success mt-3 d-none" id="successMessage">
+    <button type="button" class="btn-close" aria-label="Close"></button>
+    <i class="fa-solid fa-check"></i> Message was sent successfully!
+  </div>
+  <div class="alert alert-danger mt-3 d-none" id="errorMessage">
+    <i class="fa-solid fa-triangle-exclamation"></i> An error occurred while sending the message!
+    <button type="button" class="btn-close" onclick="removeMessage()" aria-label="Close"></button>
+  </div>
+   </div>
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+<script>
+
+$('#contactForm').on('submit', function(event) {
+      event.preventDefault();
+
+      $.ajax({
+        type: 'POST',
+        url: '/contact-send',
+        data: $(this).serialize(),
+        success: function(response) {
+          if (response.success) {
+          // Exibe a mensagem de sucesso
+          document.getElementById('successMessage').classList.remove('d-none');
+          // Limpa o formulário
+          document.getElementById('contactForm').reset();
+          } else {
+            document.getElementById('errorMessage').classList.remove('d-none');
+          }
+        },
+        error: function() {
+          document.getElementById('errorMessage').classList.remove('d-none');
+        }
+      });
+    });
+
+    function removeMessage() {
+      document.getElementById('successMessage').classList.add('d-none');
+      document.getElementById('errorMessage').classList.add('d-none');
+    }
+</script>
+
+<style>
+  #form-style {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    padding-top: 20px
+  }
+
+  .btn-close {
+    float: right;
+  }
+  </style>

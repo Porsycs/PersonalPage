@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=db
+      - DB_USER=sa
+      - DB_PASSWORD=your_password
+      - DB_NAME=nome_do_banco_de_dados
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    environment:
+      - SA_PASSWORD=your_password
+      - ACCEPT_EULA=Y
+    ports:
+      - "1433:1433"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
