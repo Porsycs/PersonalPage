@@ -1,7 +1,7 @@
 {
     "myname": "Olá, meu nome é Victor",
     "about": "Sobre mim",
-    "aboutdescription": "Olá! Meu nome é Victor, tenho %s anos, e estou imerso no mundo da programação desde os 21.Originalmente de São Paulo, agora moro em Bauru, onde concluí minha graduação em Sistemas de Informação na UNESP Bauru.Atualmente, trabalho como desenvolvedor fullstack em uma aplicação .NET e sou uma referência importante para a equipe de desenvolvimento.Meu hobby e foco secundário é JavaScript, e esta página pessoal foi inteiramente construída com Node.js.Espero que você aproveite explorando o que criei aqui. Sinta-se à vontade para entrar em contato caso tenhaalguma dúvida ou apenas queira se conectar no meu <a href='https://www.linkedin.com/in/vicporsy' target='_blank'>Linkedin</a>.<br><br><strong>Atenciosamente!</strong>",
+    "aboutdescription": "Olá! Meu nome é Victor, tenho %s anos, e estou imerso no mundo da programação desde os 21.Originalmente de São Paulo, agora moro em Bauru, onde concluí minha graduação em Sistemas de Informação na UNESP Bauru.Atualmente, trabalho como desenvolvedor fullstack em uma aplicação .NET e sou uma referência importante para a equipe de desenvolvimento.Meu hobby e foco secundário é JavaScript, e esta página pessoal foi inteiramente construída com Node.js. Espero que você aproveite explorando o que criei aqui. Sinta-se à vontade para entrar em contato caso tenha alguma dúvida ou apenas queira se conectar no meu <a href='https://www.linkedin.com/in/vicporsy' target='_blank'>Linkedin</a>.<br><br><strong>Atenciosamente!</strong>",
     "skills": "Habilidades",
     "others": "Outros",
     "experience": "Experiência",
